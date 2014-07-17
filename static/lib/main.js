@@ -12,7 +12,7 @@ function adjustSubMenu() {
 }
 
 $(document).ready(function () {
-    $(window).on('action:ajaxify.end', function(err, data) {
+    $(window).on('action:ajaxify.contentLoaded', function(err, data) {
     	var url = data.url,
     		menuItem;
 
