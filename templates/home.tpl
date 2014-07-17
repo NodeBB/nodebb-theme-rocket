@@ -4,7 +4,7 @@
 		<div class="{categories.class} col-lg-3 col-sm-12 col-xs-12 card-holder" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 			<div class="card-content category-header-image-{categories.imageClass}" style="background-image: url({categories.backgroundImage}); border-color: {categories.color};">
 				<meta itemprop="name" content="{categories.name}">
-				<h2><a href="category/{categories.slug}" style="color: {categories.color} !important;">{categories.name}</a></h2>
+				<h2><a href="category/{categories.slug}" style="color: {categories.color} !important;">{categories.name} <input type="hidden" name="description" value="{categories.description}" /></a></h2>
 
 				<div class="topics-holder">
 					<!-- BEGIN posts -->

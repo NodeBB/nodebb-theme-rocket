@@ -32,9 +32,36 @@ $(document).ready(function () {
 
 
         buildBreadcrumbs(data.url);
+        enableNewPostButton(data.url);
     });
 });
 
+function enableNewPostButton(url) {
+    if (url === '') {
+        $('#category-menu').attr('data-toggle', 'dropdown');
+        var menuItem = '<li role="presentation"><a role="menuitem" tabindex="-1" href="{slug}">{title}<br /><small>{description}</small></a></li>';
+
+        if ($('#category-menu-list').html() === '') {
+            var html = '';
+            
+            $('.card-content h2 a').each(function() {
+                var $this = $(this);
+
+                html += templates.parse(menuItem, {
+                    slug: $this.attr('href'),
+                    title: $this.text(),
+                    description: $this.children('input').val()
+                });
+
+            });
+
+            $('#category-menu-list').html(html);
+        }
+       
+    } else {
+        $('#category-menu').removeAttr('data-toggle');
+    }
+}
 
 function buildBreadcrumbs(url) {
     var breadcrumb = '<a href="{path}" class="btn btn-default btn-breadcrumb-page">{title}</a>';
