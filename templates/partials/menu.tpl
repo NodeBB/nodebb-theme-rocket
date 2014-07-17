@@ -10,9 +10,9 @@
 		</div>
 		<div class="pull-left">
 			<ul class="main-menu">
-				<li class="active"><h3><a href="{relative_path}/">Feed</a></h3></li>
-				<li><h3><a href="{relative_path}/recent">Recent</a></h3></li>
-				<li><h3><a href="{relative_path}/popular">Popular</a></h3></li>
+				<li class="menu-feed"><h3><a href="{relative_path}/">Feed</a></h3></li>
+				<li class="menu-recent"><h3><a href="{relative_path}/recent">Recent</a></h3></li>
+				<li class="menu-popular"><h3><a href="{relative_path}/popular">Popular</a></h3></li>
 			</div>
 		</div>
 
