@@ -39,25 +39,23 @@ $(document).ready(function () {
 function enableNewPostButton(url) {
     if (url === '') {
         $('#category-menu').attr('data-toggle', 'dropdown');
-        var menuItem = '<li role="presentation"><a role="menuitem" tabindex="-1" href="{slug}">{title}<br /><small>{description}</small></a></li>';
+        var menuItem = '<li role="presentation"><a role="menuitem" tabindex="-1" href="{slug}">{title} <!-- IF unread --><span class="label label-danger">New</span><!-- ENDIF unread --><br /><small>{description}</small></a></li>';
 
-        if ($('#category-menu-list').html() === '') {
-            var html = '';
-            
-            $('.card-content h2 a').each(function() {
-                var $this = $(this);
+        $('#category-menu-list').html('');
+        var html = '';
+        
+        $('.card-content h2 a').each(function() {
+            var $this = $(this);
 
-                html += templates.parse(menuItem, {
-                    slug: $this.attr('href'),
-                    title: $this.text(),
-                    description: $this.children('input').val()
-                });
-
+            html += templates.parse(menuItem, {
+                slug: $this.attr('href'),
+                title: $this.text(),
+                description: $this.children('input[name="description"]').val(),
+                unread: !!$this.children('input[name="unread"]').val()
             });
+        });
 
-            $('#category-menu-list').html(html);
-        }
-       
+        $('#category-menu-list').html(html);       
     } else {
         $('#category-menu').removeAttr('data-toggle');
     }
