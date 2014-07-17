@@ -6,6 +6,10 @@ html {
 body {
 	background: #E6E6E6;
 	padding-top: 0px;
+
+	&.subHeader-fixed {
+		padding-top: 60px;
+	}
 }
 
 .icon-heart, .icon-comment, .icon-star {
@@ -99,6 +103,14 @@ body {
 .sub-header {
 	background: #fff;
 	height: 60px;
+	border-top: 2px solid #333B43;
+
+	&.fixed {
+		position: fixed;
+		top: 0px;
+		z-index: 99;
+		width: 100%;
+	}
 
 	.container {
 		padding: 10px 20px;
