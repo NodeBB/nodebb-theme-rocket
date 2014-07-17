@@ -1,0 +1,22 @@
+{
+	"id": "nodebb-theme-rocket",
+	"library": "./lib/theme.js",
+	"hooks": [
+		{
+			"hook": "action:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
+		},
+		{
+			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
+		}
+	],
+	"staticDirs": {
+		"vendor": "static/vendor",
+		"images": "static/images"
+	},
+	"scripts": [
+		"static/lib/main.js"
+	]
+}

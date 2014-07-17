@@ -1,0 +1,10 @@
+$('.card-stat').each(function() {
+	$(this).html(Math.floor(Math.random() * 15) + 1);
+});
+
+$('.icon-heart, .icon-comment, .icon-star').each(function() {
+	var derp = Math.floor(Math.random() * 15) + 1
+	if (derp > 10) {
+		$(this).addClass('on');
+	}
+});

@@ -1,0 +1,9 @@
+{
+    "id": "nodebb-theme-rocket",
+    "name": "Rocket Theme for NodeBB",
+    "description": "A theme with a card-based design for NodeBB forums. Mobile enabled.",
+    "url": "https://www.github.com/psychobunny/nodebb-theme-rocket",
+    "screenshot": null,
+    "templates": "templates",
+    "staticDir": "static"
+}
