@@ -18,9 +18,9 @@ $(document).ready(function () {
 
     	if (url === '') {
     		menuItem = 'feed';
-    	} else if (url.match('recent')) {
+    	} else if (url.match(/^recent/)) {
     		menuItem = 'recent';
-    	} else if (url.match('popular')) {
+    	} else if (url.match(/^popular/)) {
     		menuItem = 'popular';
     	}
 
@@ -29,5 +29,28 @@ $(document).ready(function () {
 
     	$(document).on('scroll', adjustSubMenu);
     	adjustSubMenu();
+
+
+        buildBreadcrumbs(data.url);
     });
 });
+
+
+function buildBreadcrumbs(url) {
+    var breadcrumb = '<a href="{path}" class="btn btn-default btn-breadcrumb-page">{title}</a>';
+    $('.btn-breadcrumb-page').remove();
+
+    var obj;
+
+    if (url.match(/^category/)) {
+        obj = {
+            title: ajaxify.variables.get('category_name'),
+            path: ajaxify.variables.get('category_slug')
+        };
+    }
+
+
+    if (obj) {
+        $('.btn-breadcrumb #btn-home').after(templates.parse(breadcrumb, obj));
+    }
+}

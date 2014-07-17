@@ -23,8 +23,7 @@
 	<div class="container">
 		<div class="pull-left">
 			<div class="btn-group btn-breadcrumb">
-			    <a href="#" class="btn btn-default"><i class="fa fa-th fa-fw"></i></a>
-			    <a href="#" class="btn btn-default">Announcements</a>
+			    <a href="{relative_path}/" id="btn-home" class="btn btn-default"><i class="fa fa-th fa-fw"></i></a>
 			    <a href="#" class="btn btn-default btn-info"><i class="fa fa-plus fa-fw"></i> New Topic</a>
 			</div>
 		</div>
