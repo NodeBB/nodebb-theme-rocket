@@ -19,7 +19,7 @@
 		
 		<div class="pull-right">
 			<div id="user_label" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown">
 					<img class="img-circle avatar" id="user-header-picture" src="{user.picture}"/>
 				</a>
 				<ul id="user-control-list" class="dropdown-menu dropdown-menu-right" aria-labelledby="user_dropdown">
