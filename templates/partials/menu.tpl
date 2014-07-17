@@ -21,6 +21,13 @@
 </div>
 <div class="sub-header">
 	<div class="container">
+		<div class="pull-left">
+			<div class="btn-group btn-breadcrumb">
+			    <a href="#" class="btn btn-default"><i class="fa fa-th fa-fw"></i></a>
+			    <a href="#" class="btn btn-default">Announcements</a>
+			    <a href="#" class="btn btn-default btn-info"><i class="fa fa-plus fa-fw"></i> New Topic</a>
+			</div>
+		</div>
 		<div class="pull-right">
 			<button class="btn btn-lg btn-menu">[[global:header.unread]]</button>
 			<button class="btn btn-lg btn-menu square"><i class="fa fa-plus fa-fw"></i></button>
