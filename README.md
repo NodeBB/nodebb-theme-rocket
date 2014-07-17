@@ -9,6 +9,8 @@ A theme with a card-based design for NodeBB forums. Mobile enabled.
 
 ![](http://i.imgur.com/PMgv8tD.png)
 
+![](http://i.imgur.com/TCFo1wx.png)
+
 ## Installation
 
     npm install nodebb-theme-rocket
