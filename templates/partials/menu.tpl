@@ -10,7 +10,7 @@
 		</div>
 		<div class="pull-left">
 			<ul class="main-menu">
-				<li class="menu-feed"><h3><a href="{relative_path}/">Feed</a></h3></li>
+				<li class="menu-feed"><h3><a href="{relative_path}/">[[feed:feed]]</a></h3></li>
 				<li class="menu-recent"><h3><a href="{relative_path}/recent">Recent</a></h3></li>
 				<li class="menu-popular"><h3><a href="{relative_path}/popular">Popular</a></h3></li>
 			</ul>
@@ -52,7 +52,7 @@
 		<div class="pull-left">
 			<div class="btn-group btn-breadcrumb dropdown">
 			    <a href="{relative_path}/" id="btn-home" class="btn btn-default"><i class="fa fa-th fa-fw"></i></a>
-			    <a href="#" class="btn btn-default btn-info" id="action-button" data-toggle="dropdown"><i class="fa fa-plus fa-fw"></i> New Topic</a>
+			    <a href="#" class="btn btn-default btn-info" id="action-button" data-toggle="dropdown"><i class="fa fa-plus fa-fw"></i> [[rocket:select-category]]</a>
 				<ul class="dropdown-menu" role="menu" aria-labelledby="action-button" id="category-menu"></ul>
 			</div>
 		</div>
