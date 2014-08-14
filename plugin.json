@@ -17,7 +17,8 @@
 		"images": "static/images"
 	},
 	"scripts": [
-		"static/lib/main.js"
+		"static/lib/main.js",
+		"static/lib/draggable_background.js"
 	],
 	"languages": "languages"
 }

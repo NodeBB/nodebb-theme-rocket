@@ -1,3 +1,7 @@
 {
-	"select-category": "Select a category"
+	"select-category": "Select a category",
+
+	"profile-cover-instructions": "Drag and Drop a photo, drag to position, and hit <strong>Save</strong>",
+	"profile-cover-change": "Change",
+	"profile-cover-save": "Save"
 }
