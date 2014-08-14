@@ -64,11 +64,11 @@
 
 
 <ul id="main-nav" class="nav pull-left" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
-	<!-- IF isLoggedIn -->
+	<!-- IF loggedIn -->
 	<li>
 		<a href="{relative_path}/unread"><i id="unread-count" class="fa fa-fw fa-inbox" data-content="0" title="[[global:header.unread]]"></i><span class="visible-xs-inline"> [[global:header.unread]]</span></a>
 	</li>
-	<!-- ENDIF isLoggedIn -->
+	<!-- ENDIF loggedIn -->
 
 	<li>
 		<a href="{relative_path}/recent"><i class="fa fa-fw fa-clock-o" title="[[global:header.recent]]"></i><span class="visible-xs-inline"> [[global:header.recent]]</span></a>
