@@ -34,7 +34,17 @@
 		}
 	}
 
-	.change, .save {
+	&.saving {
+		.save {
+			display: none;
+		}
+
+		.indicator {
+			display: inline-block;
+		}
+	}
+
+	.change, .save, .indicator {
 		display: inline-block;
 		position: absolute;
 		top: 1em;
@@ -56,6 +66,10 @@
 	}
 
 	.save {
+		display: none;
+	}
+
+	.indicator {
 		display: none;
 	}
 

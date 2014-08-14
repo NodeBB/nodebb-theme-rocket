@@ -40,6 +40,7 @@ $(document).ready(function () {
         if (opts.url.match(/^user\/[^\/]+$/)) {
             require(['forum/theme/profile'], function(profile) {
                 profile.addListeners();
+                profile.cover.load();
             });
         }
     });

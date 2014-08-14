@@ -1,6 +1,7 @@
 <div class="profile-cover">
 	<div class="change">[[rocket:profile-cover-change]] <i class="fa fa-fw fa-pencil-square-o"></i></div>
 	<div class="save">[[rocket:profile-cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
+	<div class="indicator">[[rocket:profile-cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
 	<div class="instructions">[[rocket:profile-cover-instructions]]</div>
 </div>
 
