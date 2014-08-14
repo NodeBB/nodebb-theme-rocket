@@ -38,7 +38,9 @@ $(document).ready(function () {
 
     $(window).on('action:ajaxify.end', function(e, opts) {
         if (opts.url.match(/^user\/[^\/]+$/)) {
-            profileDOMInit();
+            require(['forum/theme/profile'], function(profile) {
+                profile.addListeners();
+            });
         }
     });
 });
@@ -98,17 +100,4 @@ function buildBreadcrumbs(url) {
     if (obj) {
         $('.btn-breadcrumb #btn-home').after(templates.parse(breadcrumb, obj));
     }
-}
-
-function profileDOMInit() {
-    var coverEl = $('.profile-cover');
-    coverEl.find('.change').on('click', function() {
-        coverEl.toggleClass('active', 1);
-        coverEl.backgroundDraggable();
-    });
-
-    coverEl.find('.save').on('click', function() {
-        coverEl.toggleClass('active', 0);
-        coverEl.backgroundDraggable('disable');
-    });
 }

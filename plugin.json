@@ -18,7 +18,8 @@
 	},
 	"scripts": [
 		"static/lib/main.js",
-		"static/lib/draggable_background.js"
+		"static/lib/draggable_background.js",
+		"static/lib/profile.js"
 	],
 	"languages": "languages"
 }
