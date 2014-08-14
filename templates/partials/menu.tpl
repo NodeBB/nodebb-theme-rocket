@@ -4,9 +4,11 @@
 			<a href="{relative_path}/">
 				<img class="{brand:logo:display} forum-logo" src="{brand:logo}" />
 			</a>
+			<!-- IF showSiteTitle -->
 			<a href="{relative_path}/">
-				<h1 class="forum-title">{title}</h1>
+				<h1 class="navbar-brand forum-title">{title}</h1>
 			</a>
+			<!-- ENDIF showSiteTitle -->
 		</div>
 		<div class="pull-left">
 			<ul class="main-menu">
